@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formularios</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Formulario Bootstrap</h2>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-custom btn-orange-pink"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal"
+        >
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="contactModal"
+          tabindex="-1"
+          aria-labelledby="contactModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content bg-orange">
+              <div class="modal-header">
+                <h2 class="modal-title fs-5" id="contactModalLabel">
+                  Formulario de contacto
+                </h2>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <!-- Formulario -->
+                <form>
+                  <!-- Email Input -->
+                  <div class="mb-3">
+                    <label for="contact-email" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control form-control-custom"
+                      id="contact-email"
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                  <!-- Password Input -->
+                  <div class="mb-3">
+                    <label for="contact-password" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control form-control-custom"
+                      id="contact-password"
+                      aria-describedby="passwordHelp"
+                      value="123456789"
+                      disabled
+                    />
+                    <div id="passwordHelp" class="form-text">
+                      Your password need's to be safe.
+                    </div>
+                  </div>
+                  <!-- Subscribe -->
+                  <div class="mb-3 form-check form-switch form-check-reverse">
+                    <input
+                      type="checkbox"
+                      role="switch"
+                      class="form-check-input"
+                      id="contact-subscribe"
+                    />
+                    <label class="form-check-label" for="contact-subscribe"
+                      >Subscribe</label
+                    >
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  id="contact-submit"
+                  type="submit"
+                  class="btn btn-custom btn-orange-pink"
+                  data-bs-dismiss="modal"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Formulario Básico</h2>
+        <form>
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre Completo"
+          />
+          <br />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Correo Electrónico"
+          />
+          <br />
+          <label for="mensaje">Mensaje:</label>
+          <br />
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            placeholder="Pon tu mensaje aquí:"
+          ></textarea>
+          <br />
+          <label for="anonimo"
+            >¿Quieres mandar el mensaje como usuario anónimo?</label
+          >
+          <input type="checkbox" name="anonimo" id="anonimo" />
+          <br />
+          <input
+            type="submit"
+            value="Mandar Mensaje"
+            class="btn btn-custom btn-orange-pink"
+          />
+        </form>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
