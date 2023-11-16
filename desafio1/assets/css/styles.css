@@ -1,0 +1,57 @@
+.sh1 {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.wh-35px {
+  height: 35px;
+  width: 35px;
+}
+
+.p-0_125rem {
+  padding: 0.125rem;
+}
+
+.p-0_25rem {
+  padding: 0.25rem;
+}
+
+.p-0_5rem {
+  padding: 0.5rem;
+}
+
+.p-1rem {
+  padding: 1rem;
+}
+
+.p-1_5rem {
+  padding: 1.5rem;
+}
+
+.p-2rem {
+  padding: 2rem;
+}
+
+.p-2_5rem {
+  padding: 2.5rem;
+}
+
+.h-63px {
+  height: 63px;
+}
+
+.carousel-item img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.h-180px {
+  height: 180px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.pb-10rem {
+  padding-bottom: 10rem;
+}

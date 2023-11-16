@@ -1,0 +1,42 @@
+.list-l1 {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #c5e7b4;
+  border-radius: 0.5rem;
+  list-style: none;
+}
+.list-l1 li {
+  color: #bd8d9d;
+  padding: 0.5rem;
+  border-bottom: 1px solid #bd8d9d;
+}
+.list-l1 li a {
+  color: #c2b5ae;
+  font-weight: bold;
+}
+
+.list-l2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.list-l2 li {
+  background-color: #272e24;
+  color: #bd8d9d;
+  padding: 0.5rem;
+  border-bottom: 1px solid tint-colo(#bd8d9d, 33);
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+.list-l2 li a {
+  color: #f3e2da;
+  text-decoration: wavy;
+}
+
+/*# sourceMappingURL=lists.css.map */

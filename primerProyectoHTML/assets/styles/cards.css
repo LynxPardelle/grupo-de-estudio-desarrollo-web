@@ -1,0 +1,53 @@
+.card-c1 {
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: #c5e7b4;
+  border-radius: 0.5rem;
+}
+.card-c1 h3 {
+  color: #bd8d9d;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #bd8d9d;
+}
+.card-c1 p {
+  color: rgb(29, 3, 3);
+  padding: 0.5rem;
+  text-align: right;
+}
+
+.card-c2 {
+  width: 50%;
+  min-width: 280px;
+  padding: 0.5rem;
+  margin: 2rem auto;
+  background-color: #bd8d9d;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.card-c2 h3 {
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  color: #c5e7b4;
+  padding: 0 0.5rem;
+  border-right: 1px solid #c5e7b4;
+  border-left: 1px solid #c5e7b4;
+}
+.card-c2 button {
+  width: 50%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 1px solid #63745a;
+  border-radius: 0.5rem;
+  background-color: #c5e7b4;
+  color: #bd8d9d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=cards.css.map */

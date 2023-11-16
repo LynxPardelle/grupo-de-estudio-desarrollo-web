@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primer proyecto HTML & CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="./bootstrap/scss/dist/bootstrap.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./assets/styles/cards.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="p-3 text-center">Primer proyecto HTML & CSS</h1>
+      <h2 class="mx-0 mx-sm-1 mx-md-2 mx-lg-3 mx-xl-4 mx-xxl-5 text-end">
+        Hola mundo
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-search"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+          />
+        </svg>
+      </h2>
+      <nav>
+        <!-- TODO: Crear la barra de navegación con listas de html. -->
+        <ol id="my-list">
+          <li>
+            <a
+              href="https://lynxpardelle.com"
+              target="_blank"
+              title="Portafolio de Lynx Pardelle"
+              >mi portafolio</a
+            >
+          </li>
+          <li>
+            <a href="./cards.html">Page 2</a>
+          </li>
+          <li>
+            <a href="#aside-bar">AsideBar</a>
+          </li>
+          <li>
+            Lista interna:
+            <br />
+            <ol id="nav-list-4" class="ps-3">
+              <li>
+                <a href="#position-test">Position Test</a>
+              </li>
+              <li>
+                <a href="#lorem-text1">Lorem Text 1</a>
+              </li>
+              <li>
+                <a href="#formated-text">Formated Text</a>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <div
+      class="d-flex overflow-x-hidden flex-column flex-sm-row flex-wrap justify-content-between align-items-start w-100"
+    >
+      <main class="px-2 col-12 col-sm-6 order-1 order-sm-0">
+        <section>
+          <dl>
+            <dt>Elemento 1</dt>
+            <dd>Descripción del elemento 1</dd>
+            <dt>Elemento 2</dt>
+            <dd>Descripción del elemento 2</dd>
+            <dt>Elemento 3</dt>
+            <dd>Descripción del elemento 3</dd>
+            <dt>Elemento 4</dt>
+            <dd>Descripción del elemento 4</dd>
+            <dt>Elemento 5</dt>
+            <dd>Descripción del elemento 5</dd>
+          </dl>
+        </section>
+        <div id="caja-muestra"></div>
+        <!-- Inicio de Sección 1  -->
+        <section class="position-relative">
+          <p id="position-test">Position Test</p>
+          <h3>Sección 1</h3>
+          <h3>Sección 1</h3>
+          <h3>Sección 1</h3>
+          <article>
+            <h4>Artículo 1</h4>
+            <p
+              id="lorem-text1"
+              class="main-text color-green"
+              contenteditable="true"
+              spellcheck="true"
+              lang="es"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+              at tempora sapiente quaerat impedit, eum distinctio inventore
+              nostrum assumenda, enim vel animi, earum molestias? Consequuntur
+              quaerat earum vel praesentium sapiente.
+            </p>
+          </article>
+          <article>
+            <!-- TODO: Rellenar con más párrafos los artículos siguientes. -->
+            <h4>Artículo 2</h4>
+            <div class="card card-article bg-warning">
+              <img
+                src="https://picsum.photos/200"
+                class="card-img-top"
+                alt="Imagen de muestra"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center h1">Card title</h5>
+                <p class="card-text fw-bold">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#flex-demo" class="btn btn-danger">Go somewhere</a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h4 class="color-green">Artículo 3</h4>
+          </article>
+          <article>
+            <h4>Artículo 4</h4>
+          </article>
+        </section>
+        <!-- Fin de Sección 1 -->
+        <section>
+          <h3 class="color-green">Sección 2</h3>
+          <figure>
+            <img
+              id="perrito_curioso"
+              src="./assets/images/perrito_curioso.jpg"
+              alt="Imagen de muestra."
+              title="Imagen de muestra."
+            />
+            <figcaption>
+              <p>Imagen de muestra.</p>
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h3>Sección 3</h3>
+          <div id="flex-demo">
+            <div id="flex-demo-item1" class="flex-demo-item"></div>
+            <div id="flex-demo-item2" class="flex-demo-item"></div>
+            <div id="flex-demo-item3" class="flex-demo-item"></div>
+            <div id="flex-demo-item4" class="flex-demo-item"></div>
+            <div id="flex-demo-item5" class="flex-demo-item"></div>
+          </div>
+        </section>
+        <section>
+          <h3>Sección 4</h3>
+          <div
+            class="d-flex flex-column flex-sm-row flex-md-row-reverse flex-nowrap flex-sm-wrap justify-content-evenly align-items-center"
+          >
+            <div
+              class="col col-6 bg-primary text-center p-3 m-2 order-5 order-sm-0"
+            >
+              Primary
+            </div>
+            <div class="col col-3 bg-secondary text-center p-4_5 m-2 order-1">
+              Secondary
+            </div>
+            <div class="col col-12 bg-success text-center p-3 m-2 order-3">
+              Success
+            </div>
+            <div class="col col-4 bg-danger text-center p-3 m-2 order-2">
+              Danger
+            </div>
+            <div class="col col-10 bg-warning text-center p-3 m-2 order-4">
+              Warning
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Sección 5</h3>
+          <div class="accordion accordion-flush" id="accordionOptionsMainPage">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-light">
+                <button
+                  class="accordion-button bg-dark text-light"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseColors"
+                  aria-expanded="true"
+                  aria-controls="collapseColors"
+                >
+                  Colors
+                </button>
+              </h2>
+              <div id="collapseColors" class="accordion-collapse collapse show">
+                <div class="accordion-body bg-danger">
+                  <ul class="list-group">
+                    <li class="list-group-item bg-primary">Primary</li>
+                    <li class="list-group-item bg-secondary">Secondary</li>
+                    <li class="list-group-item bg-success">Success</li>
+                    <li class="list-group-item bg-warning">Warning</li>
+                    <li class="list-group-item bg-info">Info</li>
+                    <li class="list-group-item bg-blood">Blood</li>
+                    <li class="list-group-item bg-monster">Monster</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFontSize"
+                  aria-expanded="false"
+                  aria-controls="collapseFontSize"
+                >
+                  Font Size
+                </button>
+              </h2>
+              <div id="collapseFontSize" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item fs-1">Fs-1</li>
+                    <li class="list-group-item fs-2">Fs-2</li>
+                    <li class="list-group-item fs-3">Fs-3</li>
+                    <li class="list-group-item fs-4">Fs-4</li>
+                    <li class="list-group-item fs-5">Fs-5</li>
+                    <li class="list-group-item fs-6">Fs-6</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Sección 6</h3>
+          <p
+            class="position-fixed top-25 start-75 bg-blood text-monster border border-1r rounded"
+          >
+            Posición Fijada
+          </p>
+        </section>
+      </main>
+      <aside id="aside-bar" class="col-12 col-sm-6 order-0 order-sm-1">
+        <h3>Barra lateral</h3>
+        <p id="formated-text">
+          Lorem anticonstitucionálmente ipsum dolor sit amet consectetur
+          adipisicing elit. Quisquam voluptatum, quibusdam, quia, voluptates
+          quos voluptate quod dolorum voluptatibus quas quidem quae. Quisquam
+          voluptatum, quibusdam, quia, voluptates quos voluptate quod dolorum
+          voluptatibus quas quidem quae.
+        </p>
+      </aside>
+    </div>
+    <footer>
+      <h3>Pie de página</h3>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

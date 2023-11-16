@@ -1,0 +1,55 @@
+@import "../../../bootstrap/scss/_functions.scss";
+@import "./my-colors.scss";
+.card-c1 {
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: $pistache;
+  border-radius: 0.5rem;
+
+  h3 {
+    color: $salmon;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $salmon;
+  }
+  p {
+    color: rgb(29, 3, 3);
+    padding: 0.5rem;
+    text-align: right;
+  }
+}
+
+.card-c2 {
+  width: 50%;
+  min-width: 280px;
+  padding: 0.5rem;
+  margin: 2rem auto;
+  background-color: $salmon;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+
+  h3 {
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+    color: $pistache;
+    padding: 0 0.5rem;
+    border-right: 1px solid $pistache;
+    border-left: 1px solid $pistache;
+  }
+  button {
+    width: 50%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border: 1px solid shade-color($pistache, 50%);
+    border-radius: 0.5rem;
+    background-color: $pistache;
+    color: $salmon;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
